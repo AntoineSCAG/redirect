@@ -1,19 +1,10 @@
-<div class='wrapper'>
-<form id='nameForm'>
-<div class='form-uname'>
-    <label id='nameLable' for='nameField'>ENTER PAGE ID:</label>
-    <input id='nameField' type='text' maxlength='25'></input>
-</div>
-<div class='form-sub'>
-    <button id='subButton' type='button'>SEND</button>
-</div>
+<form id="form" onsubmit="return false;">
+<input   style=position:absolute;top:80%;left:5%;width:40%; type="text" id="userInput">
+<input   style=position:absolute;top:50%;left:5%;width:40%; type="submit"    onclick="name()">
 </form>
 
-<div>
-    <p id='result'></p></div>
-
-window.open("https://sites.google.com/view/scag-emm/%result%");
-
-</div>
-
-
+function name()
+{
+var input = document.getElementById("userInput");
+alert(input);
+}
